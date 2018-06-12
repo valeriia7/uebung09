@@ -1,8 +1,6 @@
 package ueb09.fz;
 
-public class Auto {
-	private String hersteller;
-	private String modell;
+public class Auto extends Fahrzeug {
 	private int ps;
 	private int hubraum;
 	private int tankvolumen;
@@ -12,8 +10,7 @@ public class Auto {
 	private Scheibenbremse[] bremsen;
 
 	public Auto(String hersteller, String modell, int ps, int hubraum, int tankvolumen, int sitze, int tueren, int zulGesamtGewicht) {
-		this.hersteller = hersteller;
-		this.modell = modell;
+		super(hersteller,modell);
 		this.ps = ps;
 		this.hubraum = hubraum;
 		this.tankvolumen = tankvolumen;

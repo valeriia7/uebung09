@@ -1,6 +1,6 @@
 package ueb09.fz;
 
-public class Cantileverbremse {
+public class Cantileverbremse  {
 	private static final int MAX_BELAG = 5;
 	private static final int MIN_BELAG = 1;
 

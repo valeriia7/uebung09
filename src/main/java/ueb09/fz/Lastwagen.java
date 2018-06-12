@@ -1,8 +1,6 @@
 package ueb09.fz;
 
-public class Lastwagen {
-	private String hersteller;
-	private String modell;
+public class Lastwagen extends Fahrzeug {
 	private int achsen;
 	private int ps;
 	private int hubraum;
@@ -12,8 +10,7 @@ public class Lastwagen {
 	private Trommelbremse[] bremsen;
 
 	public Lastwagen(String hersteller, String modell, int achsen, int ps, int hubraum, int tankvolumen, int maxNutzlast, int zulGesamtGewicht) {
-		this.hersteller = hersteller;
-		this.modell = modell;
+		super(hersteller,modell,new Trommelbremse[achsen * 2],  );
 		this.achsen = achsen;
 		this.ps = ps;
 		this.hubraum = hubraum;

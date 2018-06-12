@@ -1,15 +1,12 @@
 package ueb09.fz;
 
-public class Fahrrad {
-	private String hersteller;
-	private String modell;
+public class Fahrrad extends Fahrzeug {
 	private int gaenge;
 	private boolean ruecktrittbremse;
 	private Cantileverbremse[] bremsen;
 
 	public Fahrrad(String hersteller, String modell, int gaenge, boolean ruecktrittbremse) {
-		this.hersteller = hersteller;
-		this.modell = modell;
+		super(hersteller,modell,new Cantileverbremse[]);
 		this.gaenge = gaenge;
 		this.ruecktrittbremse = ruecktrittbremse;
 

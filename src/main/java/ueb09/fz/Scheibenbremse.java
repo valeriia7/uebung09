@@ -17,7 +17,7 @@ public class Scheibenbremse {
 		System.out.println("Scheibembremse bremst!");
 	}
 
-	public boolean nochInOrdnung() {
+	public boolean brauchtService() {
 		return riefentiefe < MAX_RIEFENTIEFE && belag > MIN_BELAG;
 	}
 
