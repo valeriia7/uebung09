@@ -25,7 +25,7 @@ public class Lastwagen extends Fahrzeug {
 	}
 
 	public String toString() {
-		return "Ich bin ein " + hersteller + " " + modell + " mit "
+		return super.toString()
 				+ achsen + " Achsen, "
 				+ ps + " PS, "
 				+ hubraum + " Hubraum, "

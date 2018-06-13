@@ -10,7 +10,7 @@ public class Auto extends Fahrzeug {
 	private Scheibenbremse[] bremsen;
 
 	public Auto(String hersteller, String modell, int ps, int hubraum, int tankvolumen, int sitze, int tueren, int zulGesamtGewicht) {
-		super(hersteller,modell);
+		super(hersteller,modell, );
 		this.ps = ps;
 		this.hubraum = hubraum;
 		this.tankvolumen = tankvolumen;
@@ -26,7 +26,7 @@ public class Auto extends Fahrzeug {
 	}
 
 	public String toString() {
-		return "Ich bin ein " + hersteller + " " + modell + " mit "
+		return super.toString()
 				+ ps + " PS, "
 				+ hubraum + " Hubraum, "
 				+ tankvolumen + " Tankvolumen, "

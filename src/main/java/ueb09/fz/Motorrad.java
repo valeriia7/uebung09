@@ -1,16 +1,13 @@
 package ueb09.fz;
 
 public class Motorrad {
-	private String hersteller;
-	private String modell;
 	private int ps;
 	private int tankvolumen;
 	private Scheibenbremse vorderbremse;
 	private Trommelbremse hinterbremse;
 
 	public Motorrad(String hersteller, String modell, int ps, int tankvolumen) {
-		this.hersteller = hersteller;
-		this.modell = modell;
+		super(hersteller,modell,);
 		this.ps = ps;
 		this.tankvolumen = tankvolumen;
 
@@ -23,7 +20,7 @@ public class Motorrad {
 	}
 
 	public String toString() {
-		return "Ich bin ein " + hersteller + " " + modell + " mit "
+		return super.toString()
 				+ ps + " PS, "
 				+ tankvolumen + " Litern Tankvolumen" +
 				" sowie einer " + vorderbremse + " und " + hinterbremse;

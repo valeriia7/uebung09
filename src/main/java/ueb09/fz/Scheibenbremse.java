@@ -1,6 +1,6 @@
 package ueb09.fz;
 
-public class Scheibenbremse {
+public class Scheibenbremse implements Bremsen {
 	private static final int MAX_RIEFENTIEFE = 4;
 	private static final int MIN_BELAG = 1;
 	private static final int MAX_BELAG = 8;
