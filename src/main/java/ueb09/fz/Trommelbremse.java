@@ -1,6 +1,6 @@
 package ueb09.fz;
 
-public class Trommelbremse {
+public class Trommelbremse implements Bremsen {
 	private int belag;
 	private static final int MIN_BELAG = 2;
 	private static final int MAX_BELAG = 8;

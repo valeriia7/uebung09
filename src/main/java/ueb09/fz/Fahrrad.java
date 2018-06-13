@@ -6,11 +6,11 @@ public class Fahrrad extends Fahrzeug  {
 	private Cantileverbremse[] bremsen;
 
 	public Fahrrad(String hersteller, String modell, int gaenge, boolean ruecktrittbremse) {
-		super(hersteller,modell,new Cantileverbremse[],);
+		super(hersteller,modell, new Cantileverbremse[] { new Cantileverbremse(), new Cantileverbremse() });
 		this.gaenge = gaenge;
 		this.ruecktrittbremse = ruecktrittbremse;
 
-		this.bremsen = new Cantileverbremse[] { new Cantileverbremse(), new Cantileverbremse() };
+
 	}
 
 	public String toString() {

@@ -3,12 +3,14 @@ package ueb09.fz;
 public class Fahrzeug {
     private String hersteller;
     private String modell;
-    private Bremsen[] bremsen;
+    Bremsen[] bremsens;
 
-    public Fahrzeug(String hersteller, String modell, Bremsen[] bremsen) {
+
+    public Fahrzeug(String hersteller, String modell, Bremsen[]bremsens) {
         this.hersteller = hersteller;
         this.modell = modell;
-        this.bremsen = bremsen;
+        this.bremsens = bremsens;
+
 
     }
     public String toString () {

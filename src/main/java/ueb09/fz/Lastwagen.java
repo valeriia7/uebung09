@@ -1,35 +1,29 @@
 package ueb09.fz;
 
-public class Lastwagen extends Fahrzeug {
+public class Lastwagen extends Kraftfahrzeug {
 	private int achsen;
-	private int ps;
-	private int hubraum;
 	private int maxNutzlast;
-	private int tankvolumen;
 	private int zulGesamtGewicht;
 	private Trommelbremse[] bremsen;
 
 	public Lastwagen(String hersteller, String modell, int achsen, int ps, int hubraum, int tankvolumen, int maxNutzlast, int zulGesamtGewicht) {
-		super(hersteller,modell,new Trommelbremse[achsen * 2],  );
+		super(hersteller,modell, baueBremsen(achsen *2 ), ps, hubraum, tankvolumen);
 		this.achsen = achsen;
-		this.ps = ps;
-		this.hubraum = hubraum;
-		this.tankvolumen = tankvolumen;
 		this.maxNutzlast = maxNutzlast;
 		this.zulGesamtGewicht = zulGesamtGewicht;
 
-		bremsen = new Trommelbremse[achsen * 2];
-		for (int i = 0; i < bremsen.length; i++)
-			bremsen[i] = new Trommelbremse();
+
 
 	}
-
+	private static Bremsen[] baueBremsen(int n) {
+		Bremsen[] bremsen = new Trommelbremse[n];
+		for (int i = 0; i < bremsen.length; i++)
+			bremsen[i] = new Trommelbremse();
+		return bremsen;
+	}
 	public String toString() {
 		return super.toString()
 				+ achsen + " Achsen, "
-				+ ps + " PS, "
-				+ hubraum + " Hubraum, "
-				+ tankvolumen + " Tankvolumen, "
 				+ maxNutzlast + " max. Nutzlast, "
 				+ bremsen.length + " " + bremsen[0].toString()
 				+ " und " + zulGesamtGewicht + " zul. Gesamtgewicht";
