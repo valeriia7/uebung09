@@ -14,7 +14,9 @@ public class Fahrzeug {
 
     }
     public String toString () {
-        return "Ich bin ein " + hersteller + " " + modell + " mit ";
+
+        return "Ich bin ein " + hersteller + " " + modell + " mit "
+                ;
     }
 }
 

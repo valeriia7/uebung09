@@ -20,7 +20,9 @@ public class Motorrad extends Fahrzeug{
 	}
 
 	public String toString() {
-		return super.toString() +
+		return super.toString()
+				+ ps + " PS, "
+				+ tankvolumen + " Litern Tankvolumen" +
 				" sowie einer " + vorderbremse + " und " + hinterbremse;
 	}
 }
