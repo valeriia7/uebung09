@@ -3,14 +3,12 @@ package ueb09.fz;
 public class Lastwagen extends Kraftfahrzeug {
 	private int achsen;
 	private int maxNutzlast;
-	private int zulGesamtGewicht;
-	private Trommelbremse[] bremsen;
+
 
 	public Lastwagen(String hersteller, String modell, int achsen, int ps, int hubraum, int tankvolumen, int maxNutzlast, int zulGesamtGewicht) {
-		super(hersteller,modell, baueBremsen(achsen *2 ), ps, hubraum, tankvolumen);
+		super(hersteller,modell, baueBremsen(achsen *2 ), ps, hubraum, tankvolumen,zulGesamtGewicht);
 		this.achsen = achsen;
 		this.maxNutzlast = maxNutzlast;
-		this.zulGesamtGewicht = zulGesamtGewicht;
 
 
 
@@ -24,8 +22,6 @@ public class Lastwagen extends Kraftfahrzeug {
 	public String toString() {
 		return super.toString()
 				+ achsen + " Achsen, "
-				+ maxNutzlast + " max. Nutzlast, "
-				+ bremsen.length + " " + bremsen[0].toString()
-				+ " und " + zulGesamtGewicht + " zul. Gesamtgewicht";
+				+ maxNutzlast + " max. Nutzlast, ";
 	}
 }

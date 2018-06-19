@@ -21,8 +21,7 @@ public class Auto extends Kraftfahrzeug {
 	public String toString() {
 		return super.toString()+ "mit"
 				+ sitze + " Sitzen, "
-				+ tueren + " Türen, "
-				+ bremsen.length + " " + bremsen[0].toString();
+				+ tueren + " Türen";
 
 	}
 }

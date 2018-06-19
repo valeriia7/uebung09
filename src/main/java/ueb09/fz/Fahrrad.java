@@ -3,7 +3,6 @@ package ueb09.fz;
 public class Fahrrad extends Fahrzeug  {
 	private int gaenge;
 	private boolean ruecktrittbremse;
-	private Cantileverbremse[] bremsen;
 
 	public Fahrrad(String hersteller, String modell, int gaenge, boolean ruecktrittbremse) {
 		super(hersteller,modell, new Cantileverbremse[] { new Cantileverbremse(), new Cantileverbremse() });
@@ -14,8 +13,7 @@ public class Fahrrad extends Fahrzeug  {
 	}
 
 	public String toString() {
-		return super.toString()+ gaenge + " Gängen"
-				+ (ruecktrittbremse ? ", Rücktrittbremse" : "")
-				+ " und " + bremsen.length + " " + bremsen[0].toString();
+		return super.toString()+ "mit" + gaenge + " Gängen"
+				+ (ruecktrittbremse ? ", Rücktrittbremse" : "");
 	}
 }
